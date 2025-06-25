@@ -77,11 +77,11 @@ In one terminal, run the Postgres database, Keycloak server, Mailhog server, Exp
 
 1. Build images
 
-        docker compose build
+        docker compose build --no-cache && docker compose up -d
 
 1. Run containers
 
-        docker compose up
+        docker compose up -d
 
 1. Wait until you see a message from the Keycloak server like this:
 

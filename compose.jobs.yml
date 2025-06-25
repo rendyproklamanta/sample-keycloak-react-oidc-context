@@ -1,6 +1,6 @@
 services:
   dump:
-    image: postgres:16.4-bookworm
+    image: postgres:16-alpine
     shm_size: 128mb
     env_file:
       - ./.env 
